@@ -34,7 +34,8 @@ var timeCheck = getTheDate();
 
 // IF PAST HOUR MAKE COLOR LIGHTER
 for (i = 9 ; i < 18 ; i++){
-    if (timeCheck.hour > i) {
+    if ((timeCheck.hour -10) > (i)) {
+        console.log(timeCheck.hour + " > " + i)
         var timeBlock9 = $("#" + i);
         timeBlock9.css("background-color", "#a46efc")
     }
@@ -42,7 +43,8 @@ for (i = 9 ; i < 18 ; i++){
 
 // IF PRESENT HOUR KEEP BASE COLOR 
 for (i = 9 ; i < 18 ; i++){
-    if (timeCheck.hour === i) {
+    if ((timeCheck.hour -10) == (i)) {
+        console.log(timeCheck.hour + " === " + i)
         var timeBlock9 = $("#" + i);
         timeBlock9.css("background-color", "#762cee")
     }
@@ -50,7 +52,8 @@ for (i = 9 ; i < 18 ; i++){
 
 // IF FUTURE HOUR MAKE COLOR DARKER
 for (i = 9 ; i < 18 ; i++){
-    if (timeCheck.hour < i) {
+    if ((timeCheck.hour -10) < (i)) {
+        console.log(timeCheck.hour + " < " + i)
         var timeBlock9 = $("#" + i);
         timeBlock9.css("background-color", "#4200ad")
     }
