@@ -4,12 +4,11 @@
 
 This project is a learning assignment derivative of html and css starter code given in the [credits](#credits) section. 
 
-The goal was to create a simple calendar application that allows the user to save events for each hour of the day. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+The goal was to create a simple calendar application that allows the user to save events for each hour of the day. 
 
 The starter code uses the [Moment.js](https://momentjs.com/) library to work with date and time.
 
-![work day scheduler site](/Assets/scheduler.png))
-
+![work day scheduler site](/Assets/scheduler.png)
 
 
 **Copied here is a link to the deployed application:**
@@ -47,7 +46,7 @@ code .
 
 ## Usage
 
-This project can be used as refrence for a simple javascript function that saves text locally upon a button's click. Additionally, if you choose to build the script, it offers a solution with which you can compare yours.
+This project can be used as refrence for a script that leverages a date and time object for dynamically updated HTML and CSS powered by jQuery. It most notably saves text locally upon a button's click. Additionally, if you choose to build the script, it offers a solution with which you can compare yours.
 
 
 ## Credits
