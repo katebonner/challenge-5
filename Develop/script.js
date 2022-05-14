@@ -32,6 +32,12 @@ clock();
 // CHECK IF THE CURRENT TIME BLOCK IS IN THE PAST, PRESENT OR FUTURE
 var timeCheck = getTheDate();
 
+// DYNAMICALLY BUILD HTML
+for (i = 9 ; i < 18 ; i++){
+    var block = "<div class='row'><div class='hour col-md-2 col-4'>" + i +":00</div><input class='time-block col-md-9 col-6' id='" + i + "'></input><button class='saveBtn col-md-1 col-2'><img type='image' src='icons/save.png' alt='save-icon' class='icon'></button>";
+    $(".container").append(block);
+}
+
 // IF PAST HOUR MAKE COLOR LIGHTER
 for (i = 9 ; i < 18 ; i++){
     if (timeCheck.hour > (i)) {
@@ -43,7 +49,7 @@ for (i = 9 ; i < 18 ; i++){
 
 // IF PRESENT HOUR KEEP BASE COLOR 
 for (i = 9 ; i < 18 ; i++){
-    if (timeCheck.hour == (i)) {
+    if (timeCheck.hour == i) {
         console.log(timeCheck.hour + " === " + i)
         var timeBlock9 = $("#" + i);
         timeBlock9.css("background-color", "#762cee")
@@ -68,7 +74,7 @@ for (i = 9 ; i < 18 ; i++){
     }
  });
 
-// GET LOCALLY SAVED EVENTS
+// POPULATE TEXT CONTENT WITH LOCALLY SAVED EVENTS
 for (i = 9 ; i < 18 ; i++){
     var locallyStoredEvents = localStorage.getItem("eventData"+i);
     $("#"+i).val(locallyStoredEvents);
