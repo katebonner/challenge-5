@@ -12,7 +12,7 @@ The starter code uses the [Moment.js](https://momentjs.com/) library to work wit
 
 
 **Copied here is a link to the deployed application:**
-(https://katebonner.github.io/challenge-5/)
+(https://katebonner.github.io/hourly-day-scheduler/)
 
 
 ## Table of Contents 
@@ -37,7 +37,7 @@ cd <directory-name>
 ```
 Clone this repository.
 ```md
-git clone git@github.com:katebonner/challenge-5.git
+git clone git@github.com:katebonner/hourly-day-scheduler.git
 ```
 Open the directory you have just created in your code editor of choice either manually or via:
 ```md
